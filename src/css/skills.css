@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+  
+  }
+
+#skills{
+    margin-top: 5vh;
+  
+    padding-top: 2.5vh;
+    background-color: #0f1214;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  #skills-title{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+  
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 2.5vw;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+  }
+  #skills-title1{
+    color: white;
+  }
+  #skills-title2{
+    color: #0066ff;
+  }
+  
+  
+  #sCard-container{
+    margin: 0 auto;
+    position: relative;
+  
+    margin-top: 2.5vw;
+    width: 40vw;
+    height: auto;
+  
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1%;
+  }
+  
+  .skills-card{
+    height: auto;
+    width: auto;
+  
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .skills-card1{
+    width: 6vw;
+    height: auto;
+    
+    
+  }
+  .skills-card2{
+    color: White;
+    margin-left: .5vw;
+    
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  .skills-card2-1{
+    color: #0066ff;
+    margin-left: .5vw;
+    
+    font-weight: bold;
+    font-size: 1vw;
+    font-family: 'Orbitron', sans-serif;
+  }
