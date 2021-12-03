@@ -11,9 +11,15 @@
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
-
-  
 }
+
+#about-background{
+  background-color: rgb(228, 228, 228);
+  margin: 10vh;
+  border-radius: 10%;
+}
+
+
   
 #about-header{
     margin-top: 5vh;
@@ -40,8 +46,7 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-  
-  
+    margin-bottom: 7.5vh;
   }
   
   #about-content-image{
@@ -59,13 +64,20 @@
   }
   #about-content-text{
     vertical-align: middle;
-    font-size: 2vw;
   
     margin-top: auto;  
     margin-bottom: auto;
     margin-left: 2.5%;
-    margin-right: 10%;
+    margin-right: 10%; 
   
     font-family: 'Roboto', sans-serif;
+  }
+  
+  #about-content-text1{
+    font-size: 2.5vw;
     font-weight: bold;
+  }
+
+  #about-content-text2{
+    font-size: 1.75vw;
   }

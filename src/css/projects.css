@@ -1,5 +1,5 @@
 #project{
-    margin-top: 5vh;
+    margin-top: 17.5vh;
     display: flex;
     flex-direction: column;
   
@@ -33,7 +33,7 @@
     margin-top: 5vh;
     width: 80vw;
     height: 80vh;
-    background-color: rgb(187, 187, 187);
+    background-color: rgb(228, 228, 228);
     border-radius: 5%;
   }
   
