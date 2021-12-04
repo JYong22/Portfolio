@@ -44,7 +44,7 @@
   
     
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1%;
   }
@@ -62,9 +62,8 @@
   .skills-card1{
     width: 6vw;
     height: auto;
-    
-    
   }
+  
   .skills-card2{
     color: White;
     margin-left: .5vw;

@@ -3,8 +3,9 @@ import Java from '../images/java.png';
 import Html from '../images/html.png';
 import Css from '../images/css.png';
 import Js from '../images/js.png';
-import Rlogo from '../images/react.png'
-import MSql from '../images/Mysql.png'
+import Rlogo from '../images/react.png';
+import MSql from '../images/Mysql.png';
+import Nodejs from '../images/nodejs.png';
 
 import '../css/skills.css';
 
@@ -33,11 +34,14 @@ function Skills(){
             <div id = 'sCard-container'>
                 
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Java} alt = "Java"/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Html} alt = 'HTML'/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Css} alt = 'CSS'/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Js} alt = 'Javascript'/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Rlogo} alt = 'React'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Html} alt = 'HTML'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Css} alt = 'CSS'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Js} alt = 'Javascript'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Rlogo} alt = 'React'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {MSql} alt = 'MySQL'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2"/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Nodejs} alt = 'Nodejs'/>
+
             </div>
         </div>
     );

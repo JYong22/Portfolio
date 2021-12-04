@@ -8,10 +8,10 @@ import '../css/home.css';
 
 
 
+
 function Home(){
     return(
         <div id = 'home'>
-                <Header className = "hover-underline-white"/>
             
                 <div id = 'home-welcome'>
                     <div id = 'home-welcome1'>
@@ -39,5 +39,7 @@ function Home(){
     );
 
 }
+
+
 
 export default Home;

@@ -3,39 +3,6 @@
     font-family: 'Roboto', sans-serif;
     src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300&display=swap');
 }
-#navbar{
-  display: flex;
-  flex-direction: row;
-
-  overflow: hidden;
-  background-color: rgba(14, 47, 66, 0);
-
-  padding: 2.5vh;
-
-  font-size: 1.5vw;
-  font-family: "Monaco", "Courier New", monospace;
-  font-weight: bold;
-
-  color: white;
-
-  justify-content: center;
-  align-items: center;
-}
-
-
-#navbar-about{
-  margin-left: 3%;
-}
-#navbar-projects{
-  margin-left: 3%;
-}
-#navbar-skills{
-  margin-left: 3%;
-}
-#navbar-contact{
-  margin-left: 3%;
-}
-
 #home{
   background-color: rgb(29, 29, 29);
   height: 101vh;
@@ -51,7 +18,7 @@
 #home-welcome{
   display: flex;
   flex-direction: column;
-  margin-top: 30vh;
+  margin-top: 40vh;
 
 
 
@@ -109,5 +76,6 @@
     width: 3vw;
     height: auto;
 }
+
 
 

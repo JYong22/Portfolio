@@ -3,9 +3,11 @@ import '../css/projects.css';
 function ProjectCard(props){
     return(
         <div className = {props.className}>
-            <div className = {props.className + "1"}>
-            </div>
-            <div className = {props.className + "1"}>
+            <div className = {props.className + '1'}>
+                <div className = {props.className + "2"}>
+                </div>
+                <div className = {props.className + "2"}>
+                </div>
             </div>
         </div>
     );

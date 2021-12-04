@@ -4,6 +4,50 @@
   src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300&display=swap');
 }
 
+#navbar{
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1a3757 0%, #090a0f 100%);
+  opacity: 0.9;
+
+  padding: 1vh 0 1vh 0;
+  
+  font-size: 1.5vw;
+  font-family: "Monaco", "Courier New", monospace;
+  font-weight: bold;
+
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+#navbar-about{
+  margin-left: 3%;
+}
+#navbar-projects{
+  margin-left: 3%;
+}
+#navbar-skills{
+  margin-left: 3%;
+}
+#navbar-contact{
+  margin-left: 3%;
+}
+
+.sticky {
+  z-index:100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
 #about{
     height: 80vh;
     width: 100%;
@@ -13,10 +57,38 @@
     flex-direction: column;
 }
 
+.sticky + #about {
+  padding-top: 1vh;
+}
+
+#about-gradient{
+  background: linear-gradient(-45deg, #000e24, #0047b1, #001633, #0042ad);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+
+  margin: 10vh;
+  border-radius: 5%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 #about-background{
   background-color: rgb(228, 228, 228);
-  margin: 10vh;
-  border-radius: 10%;
+
+  margin: 2.5vh 2.5vh 2vh 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 5%;
 }
 
 
@@ -76,6 +148,10 @@
   #about-content-text1{
     font-size: 2.5vw;
     font-weight: bold;
+    
+  }
+  #about-content-text1-2{
+    color: #0066ff;
   }
 
   #about-content-text2{
