@@ -14,6 +14,7 @@
     margin-top: 5vh;
     display: flex;
     flex-direction: row;
+    gap: 1vw;
   
 
     font-size: 2.5vw;
@@ -76,12 +77,22 @@
     height: auto;
     margin-right: 1vw;
 }
+.contact-info1-1:hover{
+    width: 4vw;
+    height: auto;
+    margin-right: 1vw;
+    cursor: pointer;
+}
 
 .contact-info1-2{
     font-size: 1.25vw;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
 
+}
+.contact-info1-2:hover{
+    font-size: 1.3vw;
+    cursor: pointer;
 
 }
 

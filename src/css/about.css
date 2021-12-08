@@ -58,7 +58,7 @@
 }
 
 .sticky + #about {
-  padding-top: 1vh;
+  padding-top: 5vh;
 }
 
 #about-gradient{
@@ -87,7 +87,6 @@
 
   margin: 2.5vh 2.5vh 2vh 2vh;
   padding-top: 1vh;
-  padding-bottom: 1vh;
   border-radius: 5%;
 }
 
@@ -118,20 +117,18 @@
     display: flex;
     flex-direction: row;
     align-content: center;
-    margin-bottom: 7.5vh;
   }
   
   #about-content-image{
 
-    margin-top: 2.5%;
-    margin-left: 10%;
+    margin-left: 7.5%;
     margin-right: 2.5%;
     
   }  
   #about-content-image1{
-    width: 25vw;
+    width: 27.5vw;
     height: auto;
-    border-radius: 2.5%;
+    border-radius: 5%;
 
   }
   #about-content-text{
@@ -139,10 +136,12 @@
   
     margin-top: auto;  
     margin-bottom: auto;
-    margin-left: 2.5%;
-    margin-right: 10%; 
+    margin-left: 5%;
+    margin-right: 2.5%;
+
+
   
-    font-family: 'Roboto', sans-serif;
+    font-family: "Monaco", "Courier New", monospace;
   }
   
   #about-content-text1{
@@ -156,4 +155,5 @@
 
   #about-content-text2{
     font-size: 1.75vw;
+    
   }

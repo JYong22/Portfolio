@@ -1,4 +1,6 @@
+import React from 'react';
 import '../css/projects.css';
+
 
 function ProjectCard(props){
     return(
@@ -13,22 +15,42 @@ function ProjectCard(props){
     );
 }
 
-function Projects(){
-    return(
-        <div id = 'project'>
-            <div id = 'project-title'>
-                <div id = 'project-title1'>
-                My
+
+class Projects extends React.Component{
+    handleScroll(e){
+        let element = e.target
+        console.log(element);
+    }
+
+    render(){
+        return(
+                <div>
+                    <div id = 'project'>
+                        <div id = 'project-title'>
+                            <div id = 'project-title1'>
+                            My
+                            </div>s
+                            <div id = 'project-title2'>
+                            Projects
+                            </div>
+                        </div>
+                    </div>
+                    <div id = 'project-instructions'>
+                        Scroll in black box to see projects.
+
+                    </div>
+                    <div id = 'project1-1'>
+                        <div id = 'project1-2'>
+                            <div id = "pCards-container">
+                                <canvas id = "pCards-container1">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div id = 'project-title2'>
-                Projects
-                </div>
-            </div>
-            <div id = "pCards-container">
-                <ProjectCard className = "project-cards"/>
-                <ProjectCard className = "project-cards"/>
-            </div>
-        </div>
-    );
+        );
+    }
 }
 export default Projects;
+

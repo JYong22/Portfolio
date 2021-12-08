@@ -1,6 +1,6 @@
 import React from "react";
 import '../css/about.css';
-import Me from '../images/me.jpeg';
+import Me from '../images/me.png';
 
 import Header from './headerBar';
 
