@@ -66,10 +66,18 @@
     height: 10vw;
 
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 
     filter: drop-shadow(.5em .5em .1em #000000);
+}
+.contact-infox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .contact-info1-1{

@@ -1,8 +1,10 @@
 import React from 'react';
 import '../css/projects.css';
+import links from '../links/links.json';
 
 
-function ProjectCard(props){
+
+function ProjectCard(props){ //project cards not being used currently
     return(
         <div className = {props.className}>
             <div className = {props.className + '1'}>
@@ -15,6 +17,18 @@ function ProjectCard(props){
     );
 }
 
+
+function ProjectLink(props){
+    return(
+        <div>
+            <a className = {props.a} href = {props.href}>
+                <div className = {props.className}>
+                    {props.text}
+                </div>
+            </a>
+        </div>
+    );
+}
 
 class Projects extends React.Component{
     handleScroll(e){
@@ -40,6 +54,7 @@ class Projects extends React.Component{
 
                     </div>
                     <div id = 'project1-1'>
+                        <ProjectLink a = 'aLink' className = 'project-link' text = 'Github' href = {links.github}/>
                         <div id = 'project1-2'>
                             <div id = "pCards-container1-1">
                                 <canvas id = "pCards-container1-2">
@@ -49,6 +64,7 @@ class Projects extends React.Component{
                         </div>
                     </div>
                     <div id = 'project2-1'>
+                        <ProjectLink a = 'aLink' className = 'project-link' text = 'Github' href = {links.github}/>
                         <div id = 'project2-2'>
                             <div id = "pCards-container2-1">
                                 <canvas id = "pCards-container2-2">

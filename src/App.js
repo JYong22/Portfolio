@@ -4,11 +4,14 @@ import About from './pages/about';
 import Projects from './pages/projects';
 import Skills from './pages/skills';
 import Contact from './pages/contact';
+
+import React from "react";
+
 function App() {
   return (
     <div className="App">
       <Home/>
-      <About/>
+      <About />
       <Projects/>
       <Skills/>
       <Contact/>

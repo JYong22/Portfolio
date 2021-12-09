@@ -1,6 +1,5 @@
 const images = importAll(require.context('../images/Project2/animation2', false, /\.(png|jpe?g|svg)$/)); //project2
 
-
 function importAll(r) { //renders all images into a json object
     let images = {};
     r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
@@ -27,6 +26,7 @@ function pro2(){
       for (let i = 1; i < frameCount; i++) {
         const img = new Image();
         img.src = currentFrame(i);
+
       }
     };
     //new images
@@ -51,10 +51,22 @@ function pro2(){
   
       const maxScrollTop = div.scrollHeight- div.clientHeight; //scrollheight - clientheight gives the max scroll
       const scrollFraction = scrollTop / maxScrollTop;
+
+      console.log(scrollFraction);
+
+      
       const frameIndex = Math.min(
         frameCount - 1,
         Math.ceil(scrollFraction * frameCount) 
       );
+      if (scrollFraction > 0.95){
+        canvas.style.transform = `translate(0%, -27%)`
+      }
+      else if (scrollFraction > 0.88)
+        canvas.style.transform = `translate(0%, -40%)`
+      else(
+        canvas.style.transform = `translate(0%, -50%)`
+      )
       
       requestAnimationFrame(() => updateImage(frameIndex + 1))
     });

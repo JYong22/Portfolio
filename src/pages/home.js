@@ -3,6 +3,8 @@ import Header from './headerBar';
 import linkedIn from '../images/linkedin.png';
 import github from '../images/github.png';
 
+import links from '../links/links.json';
+
 import '../css/stars.css';
 import '../css/home.css';
 
@@ -23,12 +25,16 @@ function Home(){
                     </div>
 
                     <div id = "home-social">
-                        <div id = "home-social-linkedin" >
-                            <img id = "home-social-linkedin1" src = {linkedIn} alt = 'linkedin'/>
+                        <a href = {links.linkedin}>
+                            <div id = "home-social-linkedin" >
+                                <img id = "home-social-linkedin1" src = {linkedIn} alt = 'linkedin'/>
+                            </div>
+                        </a>
+                        <a href = {links.github}>
+                            <div id = "home-social-github" class = 'home-github'>
+                                <img id = "home-social-github1" src = {github} alt = 'linkedin'/>
                         </div>
-                        <div id = "home-social-github" class = 'home-github'>
-                            <img id = "home-social-github1" src = {github} alt = 'linkedin'/>
-                        </div>
+                        </a>
 
                     </div>
                 </div>
