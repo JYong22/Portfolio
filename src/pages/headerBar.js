@@ -20,7 +20,7 @@ function Header(props){
             </a>
 
             <a href = '#contact'>
-                <div className = {props.className} id = 'navbar-contact' href = '#contact'>Contact Me</div>
+                <div className = {props.className} id = 'navbar-contact' href = '#contact'>Contact</div>
             </a>
         </div>
     );
