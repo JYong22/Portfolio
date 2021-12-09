@@ -25,10 +25,6 @@
   text-align: center;
 }
 
-#project1-1{
- 
-
-}
 #project1-2{
     overflow-y: auto;
 
@@ -45,7 +41,7 @@
     background-color: rgb(255, 255, 255);
 }
   
-#pCards-container{
+#pCards-container1-1{
   position: relative;
   height: 250vh;
   width: 100%;
@@ -54,7 +50,49 @@
     
 
 }
-#pCards-container1{
+#pCards-container1-2{
+
+  width: 100%;
+  height: 55vh;
+
+  top:50%;
+  position: sticky;
+
+
+  transform: translate(0%, -50%);
+
+
+  max-width: 100vw;
+  max-height: 100vh;
+
+}
+
+#project2-2{
+  overflow-y: auto;
+
+
+  width: 90vw;
+  height: 70vh;
+
+  border: 2px solid black;
+
+  margin-top: 5vh;
+
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: rgb(255, 255, 255);
+}
+
+#pCards-container2-1{
+  position: relative;
+  height: 250vh;
+  width: 100%;
+
+  align-self: center;
+    
+
+}
+#pCards-container2-2{
 
   width: 100%;
   height: 55vh;
@@ -68,9 +106,12 @@
   background-color: white;
 
   max-width: 100vw;
-  max-height: 100vh;
+  max-height: 100vh;  
 
 }
+
+
+
 .project-cards{
   background: linear-gradient(-45deg, #000e24, #0047b1, #001633, #0042ad);
   background-size: 400% 400%;

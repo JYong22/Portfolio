@@ -29,7 +29,7 @@ class Projects extends React.Component{
                         <div id = 'project-title'>
                             <div id = 'project-title1'>
                             My
-                            </div>s
+                            </div>
                             <div id = 'project-title2'>
                             Projects
                             </div>
@@ -41,8 +41,17 @@ class Projects extends React.Component{
                     </div>
                     <div id = 'project1-1'>
                         <div id = 'project1-2'>
-                            <div id = "pCards-container">
-                                <canvas id = "pCards-container1">
+                            <div id = "pCards-container1-1">
+                                <canvas id = "pCards-container1-2">
+                                    
+                                </canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div id = 'project2-1'>
+                        <div id = 'project2-2'>
+                            <div id = "pCards-container2-1">
+                                <canvas id = "pCards-container2-2">
                                     
                                 </canvas>
                             </div>
