@@ -54,7 +54,7 @@ class Projects extends React.Component{
 
                     </div>
                     <div id = 'project1-1'>
-                        <ProjectLink a = 'aLink1' className = 'project-link' text = 'Github' href = {links.github}/>
+                        <ProjectLink a = 'aLink1' className = 'project-link' text = 'Github' href = {links.project1}/>
                         <div id = 'project1-2'>
                             <div id = "pCards-container1-1">
                                 <canvas id = "pCards-container1-2">
@@ -64,7 +64,7 @@ class Projects extends React.Component{
                         </div>
                     </div>
                     <div id = 'project2-1'>
-                        <ProjectLink a = 'aLink1' className = 'project-link' text = 'Github' href = {links.github}/>
+                        <ProjectLink a = 'aLink1' className = 'project-link' text = 'Github' href = {links.project2}/>
                         <div id = 'project2-2'>
                             <div id = "pCards-container2-1">
                                 <canvas id = "pCards-container2-2">
