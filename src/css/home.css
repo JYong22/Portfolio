@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300&display=swap');
+}
+#home{
+  background-color: rgb(29, 29, 29);
+  height: 101vh;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+
+
+#home-welcome{
+  display: flex;
+  flex-direction: column;
+  margin-top: 40vh;
+
+
+
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+
+  align-items: center;
+  justify-content: center;
+
+}
+#home-welcome1{
+  font-size: 4vw;
+  color: rgb(255,255,255);
+
+}
+#home-welcome2{
+  font-size: 1.5vw;
+  color: rgb(100, 167, 255);
+}
+
+#home-social{
+    display: flex;
+    flex-direction: row;
+    width: 10vw;
+    height: 5vh;
+    margin-top: 1%;
+    
+
+    justify-content: center;
+    align-items: center;
+}
+
+#home-social-linkedin{
+  border: 2px #ffffff;
+  margin-right: 10%;
+}
+#home-social-linkedin:hover{
+    cursor: pointer;
+}
+#home-social-linkedin1{
+    width: 3vw;
+    height: auto;
+    z-index:100;
+
+
+}
+#home-social-linkedin1:hover{
+  width: 4vw;
+  height: auto;
+
+}
+#home-social-github{
+    border: 2px #ffffff;
+    margin-left: 10%;
+
+}
+#home-social-github:hover{
+    cursor: pointer;
+}
+
+#home-social-github1{
+    width: 3vw;
+    height: auto;
+}
+
+#home-social-github1:hover{
+  width: 4vw;
+  height: auto;
+}
+
+
+

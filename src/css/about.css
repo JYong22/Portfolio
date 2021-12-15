@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Orbitron', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Roboto:wght@300&display=swap');
+}
+
+#navbar{
+  display: flex;
+  flex-direction: row;
+
+  overflow: hidden;
+  background: radial-gradient(ellipse at bottom, #1a3757 0%, #090a0f 100%);
+  opacity: 0.9;
+
+  padding: 1vh 0 1vh 0;
+  gap: 2%;
+  
+  font-size: 1.5vw;
+  font-family: "Monaco", "Courier New", monospace;
+  font-weight: bold;
+
+  color: white;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.sticky {
+  z-index:100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+
+
+#about{
+    height: 80vh;
+    width: 100%;
+  
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+}
+
+.sticky + #about {
+  padding-top: 5vh;
+}
+
+#about-gradient{
+  background: linear-gradient(-45deg, #000e24, #0047b1, #001633, #0042ad);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+
+  margin: 10vh;
+  border-radius: 5%;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#about-background{
+  background-color: rgb(255, 255, 255);
+
+  margin: 2.5vh 2.5vh 2vh 2vh;
+  padding-top: 1vh;
+  border-radius: 5%;
+}
+
+
+  
+#about-header{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+  
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 2.5vw;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+}
+  #about-header1{
+    color: rgb(0, 0, 0);
+  }
+  #about-header2{
+    color: #0066ff;
+  }
+  
+  
+  #about-content{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+  
+  #about-content-image{
+
+    margin-left: 7.5%;
+    margin-right: 2.5%;
+    
+  }  
+  #about-content-image1{
+    width: 27.5vw;
+    height: auto;
+    border-radius: 5%;
+
+  }
+  #about-content-text{
+    vertical-align: middle;
+  
+    margin-top: auto;  
+    margin-bottom: auto;
+    margin-left: 5%;
+    margin-right: 2.5%;
+
+
+  
+    font-family: "Monaco", "Courier New", monospace;
+  }
+  
+  #about-content-text1{
+    font-size: 2.5vw;
+    font-weight: bold;
+    
+  }
+  #about-content-text1-2{
+    color: #0066ff;
+  }
+
+  #about-content-text2{
+    font-size: 1.75vw;
+    
+  }

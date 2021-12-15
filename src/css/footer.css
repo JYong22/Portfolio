@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Orbitron', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&display=swap');
+  
+  }
+
+#footer{
+    margin-top: 5vh;
+  
+    background: radial-gradient(ellipse at bottom, #162029 0%, #090a0f 100%);
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+
+    display: flex;
+    flex-direction: column;
+  
+  }
+
+  #footer-text{
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+  
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 2.5vw;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+
+    color: white;
+
+  }
+
+
+  #footer-role{
+    display: flex;
+    gap: 1%;
+  
+    align-items: center;
+    justify-content: center;
+  
+    font-size: 1.5vw;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+
+    color: rgb(100, 167, 255);
+
+  }
