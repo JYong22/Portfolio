@@ -5,7 +5,6 @@ import Linkedin from '../images/linkedin.png';
 import Github from '../images/github.png';
 
 import links from '../links/links.json';
-import { useButtonProps } from '@restart/ui/esm/Button';
 
 function ContactCard(props){
     return(
