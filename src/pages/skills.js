@@ -34,13 +34,13 @@ function Skills(){
             <div id = 'sCard-container'>
                 
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Java} alt = "Java"/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Html} alt = 'HTML'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Html} alt = 'HTML'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Css} alt = 'CSS'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Js} alt = 'Javascript'/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Rlogo} alt = 'React'/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Rlogo} alt = 'React'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {MSql} alt = 'MySQL'/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2"/>
-                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2-1" src = {Nodejs} alt = 'Nodejs'/>
+                <SkillsCard/>
+                <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Nodejs} alt = 'Nodejs'/>
 
             </div>
         </div>

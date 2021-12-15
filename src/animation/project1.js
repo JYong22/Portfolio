@@ -1,4 +1,3 @@
-import WhiteOut from '../images/whiteBackground.png';
 
 function importAll(r) { //renders all images into a json object
     let images = {};
@@ -31,9 +30,7 @@ function pro1(){
     };
     //new images
     const img = new Image()
-    const img1 = new Image(); 
   
-    img1.src = WhiteOut;
     img.src = currentFrame(1);
     canvas.width= 3050
     canvas.height=1050;
@@ -45,8 +42,6 @@ function pro1(){
     const updateImage = index => {
       context.opacity = 1;
       img.src = currentFrame(index);
-      context.drawImage(img1, 0, 0); //white background to clear canvas
-      setTimeout(500);
       context.drawImage(img, 0, 0); //draw image
     }
   

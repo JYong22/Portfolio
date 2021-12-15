@@ -5,11 +5,12 @@
   }
 
 #skills{
-    margin-top: 10vh;
+    margin-top: 2.5vh;
   
-    padding-top: 10vh;
-    background: radial-gradient(ellipse at bottom, #162029 0%, #090a0f 100%);
-    height: 80vh;
+    padding-top: 5vh;
+    /*background: radial-gradient(ellipse at bottom, #162029 0%, #090a0f 100%);*/
+    background-color: white;
+    height: 50vh;
     align-items: center;
     justify-content: center;
   
@@ -18,6 +19,8 @@
     display: flex;
     flex-direction: row;
     gap: 1%;
+    margin-top: 2.5vh;
+
   
     align-items: center;
     justify-content: center;
@@ -27,7 +30,7 @@
     font-weight: bold;
   }
   #skills-title1{
-    color: white;
+    color: rgb(0, 0, 0);
   }
   #skills-title2{
     color: #0066ff;
@@ -47,20 +50,28 @@
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 1%;
+
+    align-items: center;
+    justify-content: center;
   }
   
   .skills-card{
-    height: auto;
-    width: auto;
+    height: 12vh;
+    width: 17vw;
+    background: radial-gradient(ellipse at bottom, #004785 0%, #1a1e2e 100%);
   
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
+    border-radius: 10%;
+
+    border: solid black 2px;
   }
   
   .skills-card1{
-    width: 6vw;
+    width: 3vw;
     height: auto;
   }
   

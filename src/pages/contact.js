@@ -29,13 +29,13 @@ function ContactForm(props){
         <div id = 'contact-form'>
              <form action="mailto:@gmail.com" method="post" enctype="text/plain">
                 Name:<br/>
-                <input type="text" name="name"/><br/>
+                <input class = 'contact-input'type="text" name="name"/><br/>
                 E-mail:<br/>
-                <input type="text" name="mail"/><br/>
+                <input class = 'contact-input' type="text" name="mail"/><br/>
                 Comment:<br/>
-                <input type="text" name="comment" size="50"/><br/><br/>
-                <input type="submit" value="Send"/>
-                <input type="reset" value="Reset"/>
+                <input id = 'contact-comment' type="text" name="comment" size="50"/><br/><br/>
+                <input class = 'contact-button' type="submit" value="Send"/>
+                <input class = 'contact-button' type="reset" value="Reset"/>
             </form>
         </div>
     );
@@ -56,10 +56,9 @@ function Contact(){
             <div id = 'contact-container'>
                 <div id = 'contact-info'>
                     <ContactCard className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Gmail} alt = 'Gmail' text = 'JohnsonYong0901@gmail.com'/>
-                    <ContactCard a = 'aLink' className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Linkedin} alt = 'Linkedin' text = 'Linkedin' href = {links.linkedin}/>
-                    <ContactCard a = 'aLink' className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Github} alt = 'Github' text = 'Github' href = {links.github}/>
+                    <ContactCard a = 'aLink2' className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Linkedin} alt = 'Linkedin' text = 'Linkedin' href = {links.linkedin}/>
+                    <ContactCard a = 'aLink2' className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Github} alt = 'Github' text = 'Github' href = {links.github}/>
                 </div>
-                <ContactForm/>
             </div>
         </div>
     )

@@ -1,4 +1,8 @@
+.aLink1{
+  text-decoration: none;
+  color: white;
 
+}
 
 #project{
   margin-top: 10vh;
@@ -129,7 +133,13 @@
 
   font-family: 'Orbitron', sans-serif;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: 1.5vw;
+}
+.project-link:hover{
+  background-color: #3b89fd;
+  width: 10.5vw;
+  height: 5.5vh;
+
 }
 
 
