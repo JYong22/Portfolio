@@ -44,3 +44,7 @@ html {
   box-sizing: border-box;
 }
 
+#body{
+  background: radial-gradient(ellipse at bottom, #1a3757 0%, #090a0f 100%);
+
+}

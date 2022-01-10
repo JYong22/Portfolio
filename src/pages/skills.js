@@ -6,31 +6,55 @@ import Js from '../images/js.png';
 import Rlogo from '../images/react.png';
 import MSql from '../images/Mysql.png';
 import Nodejs from '../images/nodejs.png';
+import { Heading,Text,Stack, Flex, Link, Box, Image } from '@chakra-ui/react';
+
 
 import '../css/skills.css';
 
 function SkillsCard(props){
     return(
-        <div className = {props.className1}>
-            <img className = {props.className2} src ={props.src} alt = {props.alt}/>
-            <div className = {props.className3}>
+        <Box className = {props.className1} 
+        h = {['10vh','10vh','14vh']}
+        w = {['30vw','30vw','17vw']}>
+            <Image  src ={props.src} alt = {props.alt}
+                boxSize={['10vw','10vw','4vw']}
+                
+                
+                
+            />
+            <Box className = {props.className3}
+            fontSize = {['2.5vw','2.5vw','1vw']}>
                 {props.alt}
-            </div>
+            </Box>
             
-        </div>
+        </Box>
+    );
+}
+function FakeSkillsCard(props){
+    return(
+        <Box className = {props.className1}>
+            <Image  src ={props.src} alt = {props.alt}
+                
+                
+            />
+            <Box className = {props.className3}>
+                {props.alt}
+            </Box>
+            
+        </Box>
     );
 }
 function Skills(){
     return(
-        <div id = 'skills'>
-            <div id = 'skills-title'>
-                <div id = 'skills-title1'>
+        <Box id = 'skills' marginTop = {['0vh','0vh','10vh']}>
+            <Box id = 'skills-title' fontSize = {['7vw','5vw', '3vw']}>
+                <Text id = 'skills-title1' color = 'white'>
                     My
-                </div>
-                <div id = 'skills-title2'>
+                </Text>
+                <Text id = 'skills-title2'>
                     Skills
-                </div>
-            </div>
+                </Text>
+            </Box>
             <div id = 'sCard-container'>
                 
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Java} alt = "Java"/>
@@ -39,11 +63,11 @@ function Skills(){
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Js} alt = 'Javascript'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Rlogo} alt = 'React'/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {MSql} alt = 'MySQL'/>
-                <SkillsCard/>
+                <FakeSkillsCard/>
                 <SkillsCard className1 = "skills-card" className2 = "skills-card1" className3 = "skills-card2" src = {Nodejs} alt = 'Nodejs'/>
 
             </div>
-        </div>
+        </Box>
     );
 }
 

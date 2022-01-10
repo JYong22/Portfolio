@@ -1,19 +1,24 @@
 import '../css/footer.css';
+
+import { Heading,Text,Stack, Flex, Link, Box, Image } from '@chakra-ui/react';
+
 function Footer(){
     return(
         <div id = 'footer'>
-            <div id = 'footer-text'>
-                <div id = 'footer-text1'>
+            <Box id = 'footer-text'
+            fontSize ={['7.5vw','5vw','2.5vw']}>
+                <Text id = 'footer-text1'>
                     Johnson
-                </div>          
-                <div id = 'footer-text2'>
+                </Text>          
+                <Text id = 'footer-text2'>
                     Yong
-                </div>
-            </div>
-            <div id = 'footer-role'>
+                </Text>
+            </Box>
+            <Text id = 'footer-role'
+            fontSize ={['5vw','3.5vw','1.5vw']}>
                 Software Engineer Student
                 
-            </div>
+            </Text>
 
         </div>
     );

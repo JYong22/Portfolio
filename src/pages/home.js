@@ -2,6 +2,8 @@ import React from "react";
 import Header from './headerBar';
 import linkedIn from '../images/linkedin.png';
 import github from '../images/github.png';
+import { Heading,Text,Stack, Flex, Link, Box, Image } from '@chakra-ui/react'
+
 
 import links from '../links/links.json';
 
@@ -16,25 +18,34 @@ function Home(){
         <div id = 'home'>
             
                 <div id = 'home-welcome'>
-                    <div id = 'home-welcome1'>
+                    <Text 
+                        bgGradient='linear(to-l,  #cae5ff, #9fd9ff);'
+                        bgClip='text'
+                        fontSize={['10vw','6vw', '5vw']} 
+                        id = 'home-welcome1'>
                        Johnson Yong
-                    </div>
+                    </Text>
 
-                    <div id = 'home-welcome2'>
+                    <Text 
+                        bgGradient='linear(to-l,  #88b8e6, #76c8ff)'
+                        bgClip='text'
+                        fontSize={['5vw','3vw', '2vw']} 
+                        id = 'home-welcome2'>
                         Software Engineer Student
-                    </div>
+                    </Text>
 
                     <div id = "home-social">
-                        <a href = {links.linkedin}>
-                            <div id = "home-social-linkedin" >
-                                <img id = "home-social-linkedin1" src = {linkedIn} alt = 'linkedin'/>
-                            </div>
-                        </a>
-                        <a href = {links.github}>
-                            <div id = "home-social-github" class = 'home-github'>
-                                <img id = "home-social-github1" src = {github} alt = 'linkedin'/>
-                        </div>
-                        </a>
+                        
+                        <Link href = {links.linkedin}>
+                            <Box boxSize={['10vw','5vw','3vw']}>
+                                <Image  src = {linkedIn} alt = 'linkedin'/>
+                            </Box>
+                        </Link>
+                        <Link href = {links.github} marginLeft={2}>
+                            <Box boxSize={['10vw','5vw','3vw']}>
+                                <Image  src = {github} alt = 'linkedin'/>
+                            </Box>
+                        </Link>
 
                     </div>
                 </div>

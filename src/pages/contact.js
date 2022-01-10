@@ -3,23 +3,25 @@ import '../css/contact.css';
 import Gmail from '../images/email.png';
 import Linkedin from '../images/linkedin.png';
 import Github from '../images/github.png';
-
 import links from '../links/links.json';
+
+import { Heading,Text,Stack, Flex, Link, Box, Image } from '@chakra-ui/react';
+
 
 function ContactCard(props){
     return(
-        <div className = {props.className}>
+        <Box className = {props.className}>
             <a className = {props.a} href = {props.href}>
-            <div className = {props.className3}>
-                <div>
-                    <img src = {props.src} alt = {props.alt} className = {props.className1}/>
-                </div>
-                <div className = {props.className2} >
+            <Box className = {props.className3}>
+                <Box>
+                    <Image src = {props.src} alt = {props.alt} className = {props.className1}/>
+                </Box>
+                <Box className = {props.className2} >
                     {props.text}                
-                </div>
-            </div>
+                </Box>
+            </Box>
             </a>
-        </div>
+        </Box>
     );
 }
 
@@ -43,15 +45,17 @@ function ContactForm(props){
 function Contact(){
 
     return(
-        <div id = 'contact'>
-            <div id = 'contact-title'>
-                <div id = 'contact-title1'>
+        <Box id = 'contact' h = {['35em','40vh','110vh']} >
+            <Box id = 'contact-title'
+            fontSize = {['7vw','5vw', '3vw']}>
+                <Text id = 'contact-title1'
+                color = 'white'>
                     Contact
-                </div>
-                <div id = 'contact-title2'>
+                </Text>
+                <Text id = 'contact-title2'>
                     Me
-                </div>
-            </div>
+                </Text>
+            </Box>
             <div id = 'contact-container'>
                 <div id = 'contact-info'>
                     <ContactCard className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Gmail} alt = 'Gmail' text = 'JohnsonYong0901@gmail.com'/>
@@ -59,7 +63,7 @@ function Contact(){
                     <ContactCard a = 'aLink2' className3 = 'contact-infox' className = 'contact-info1' className1 = 'contact-info1-1' className2 = 'contact-info1-2' src = {Github} alt = 'Github' text = 'Github' href = {links.github}/>
                 </div>
             </div>
-        </div>
+        </Box>
     )
 }
 

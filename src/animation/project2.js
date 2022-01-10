@@ -1,4 +1,4 @@
-const images = importAll(require.context('../images/Project2/animation2', false, /\.(png|jpe?g|svg)$/)); //project2
+const images = importAll(require.context('../images/project2', false, /\.(png|jpe?g|svg)$/)); //project2
 
 function importAll(r) { //renders all images into a json object
     let images = {};
@@ -15,7 +15,7 @@ function pro2(){
     const canvas = document.getElementById("pCards-container2-2"); //canvas for image container
     const context = canvas.getContext("2d"); //setcontext to 2d
   
-    const frameCount = 95; //all image counts
+    const frameCount = 5; //all image counts
     const currentFrame = index => ( //if current frame changes then change image
       images[`a${index}.png`].default
     )
@@ -33,8 +33,8 @@ function pro2(){
     const img = new Image()
   
     img.src = currentFrame(1);
-    canvas.width= 4500
-    canvas.height=1660;
+    canvas.width= 1920;
+    canvas.height=980;
     img.onload=function(){
       context.drawImage(img, 0, 0);
     }
@@ -60,10 +60,10 @@ function pro2(){
         Math.ceil(scrollFraction * frameCount) 
       );
       if (scrollFraction > 0.95){
-        canvas.style.transform = `translate(0%, -27%)`
+        canvas.style.transform = `translate(0%, -0%)`
       }
       else if (scrollFraction > 0.88)
-        canvas.style.transform = `translate(0%, -40%)`
+        canvas.style.transform = `translate(0%, -30%)`
       else(
         canvas.style.transform = `translate(0%, -50%)`
       )
